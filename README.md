@@ -1,21 +1,17 @@
-# Lesia Arbuzova — bilingual CV + portfolio
+# Watermelon Design Portfolio
 
-Static, self-contained HTML portfolio in Ukrainian and English.
+Bilingual CV and selected graphic design portfolio by Lesia Arbuzova.
 
-## Open
+Двомовне CV та портфоліо вибраних робіт графічної дизайнерки Лесі Арбузової.
 
-Open `index.html` directly or run a local server from this folder:
+## Content
 
-```powershell
-python -m http.server 4173
-```
+- brand identity and logo design
+- social media and advertising creatives
+- packaging and label design
+- print materials and product imagery
 
-Then open `http://localhost:4173`.
+## Website
 
-## Structure
-
-- `index.html` — semantic page structure
-- `styles.css` — responsive editorial design system
-- `script.js` — UA/EN localization, reveal motion and accessible image lightbox
-- `assets/` — optimized WebP versions of selected portfolio work
-- `files/` — downloadable PDF portfolio
+The portfolio is a static HTML website with Ukrainian and English language modes.
+Open `index.html` locally or publish the repository with any static hosting provider.
