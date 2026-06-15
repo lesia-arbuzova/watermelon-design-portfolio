@@ -14,4 +14,4 @@ rtk gh pr list       rtk npm run build    rtk npm test
 rtk tsc --noEmit     rtk pytest -q        rtk docker ps
 ```
 
-Railway filters installed in `.rtk/filters.toml`; use the pipe aliases/forms from `RTK.md` for Railway commands.
+Railway filters installed in `.rtk/filters.toml` for future RTK builds; current RTK does not expose custom filters via `rtk pipe -f`, so use `rtk summary railway ...` forms from `RTK.md` for Railway commands.

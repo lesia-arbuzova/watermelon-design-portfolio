@@ -22,13 +22,13 @@ rtk grep "section" .
 ```
 
 ## Railway filters
-Project-local Railway filters live in `.rtk/filters.toml` and are trusted locally. If Railway CLI is used here, prefer:
+Project-local Railway filters live in `.rtk/filters.toml` and are trusted locally for future RTK builds. Current RTK does not expose custom filters through `rtk pipe -f`, so use the working compact fallback:
 
 ```bash
-railway status --json 2>&1 | rtk pipe -f railway-status
-railway whoami --json 2>&1 | rtk pipe -f railway-status
-railway service 2>&1 | rtk pipe -f railway-service
-railway logs 2>&1 | rtk pipe -f railway-logs
+rtk summary railway status --json
+rtk summary railway whoami --json
+rtk summary railway service
+rtk summary railway logs
 ```
 
 ## Meta
