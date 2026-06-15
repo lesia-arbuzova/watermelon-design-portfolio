@@ -1,0 +1,34 @@
+# Project-local RTK filters for Railway CLI
+schema_version = 1
+
+[filters.railway-status]
+description = "Railway CLI: compact status, whoami, JSON output"
+match_command = "^railway\\s+(status|whoami)(\\s|$)"
+keep_lines_matching = [
+  "Current Project", "Current Environment", "Environment Variables",
+  "\\{",
+  '"project', '"environment', '"status', '"user', '"version',
+  '"', "}",
+]
+max_lines = 30
+on_empty = "railway: no project linked"
+
+[filters.railway-service]
+description = "Railway CLI: compact service listing"
+match_command = "^railway\\s+service\\b"
+strip_lines_matching = ["^Up to date", "^●", "^Found", "^$"]
+max_lines = 30
+
+[filters.railway-logs]
+description = "Railway CLI: compact logs (last 20 lines)"
+match_command = "^railway\\s+logs\\b"
+strip_lines_matching = ["^$"]
+max_lines = 40
+tail_lines = 20
+
+[filters.railway-other]
+description = "Railway CLI: generic fallback"
+match_command = "^railway\\b"
+strip_lines_matching = ["^Up to date", "^●", "^$"]
+max_lines = 50
+on_empty = "railway: ok"
