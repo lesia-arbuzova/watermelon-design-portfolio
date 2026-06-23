@@ -1,14 +1,25 @@
 # RTK — Rust Token Killer (Codex CLI / Hermes)
 
 ## Rule
-Always prefix supported shell commands with `rtk` to reduce AI context usage by 60–90%.
+Use native RTK wrappers for supported output-heavy commands; use `rtk pipe` filters for unsupported noisy commands.
 
 ```bash
 rtk git status       rtk git diff         rtk git log --oneline -20
 rtk ls               rtk read <file>      rtk grep <pattern> .
-rtk gh pr list       rtk npm run build    rtk npm test
+rtk find .           rtk npm run build    rtk npm test
 rtk tsc --noEmit     rtk pytest -q        rtk docker ps
 ```
+
+RTK 0.42.x часто дає `rtk fallback` для PowerShell/Python/Node. Не форсуй `rtk powershell`, `rtk python`, `rtk node` для цих команд; якщо output треба показати агенту, стискай його pipe-фільтром:
+
+```bash
+set -o pipefail; rg --files -g "*.png" 2>&1 | rtk pipe -f find
+set -o pipefail; rg "pattern" . 2>&1 | rtk pipe -f grep
+set -o pipefail; node qa-script.mjs 2>&1 | rtk pipe -f log
+set -o pipefail; python script.py 2>&1 | rtk pipe -f log
+```
+
+Для читання файлів не використовуй PowerShell `Get-Content`; використовуй `rtk read <file>`.
 
 ## GitHub Pages / static site workflow
 This repository is a static HTML/CSS/JS portfolio site published from GitHub. Use compact commands when inspecting it:
