@@ -1,6 +1,6 @@
 @RTK.md
 
-### RTK (Rust Token Killer) — Token-Optimized Commands
+### RTK (Rust Token Killer) - Token-Optimized Commands
 
 Use native RTK wrappers for supported output-heavy commands; use `rtk pipe` filters for unsupported noisy commands.
 

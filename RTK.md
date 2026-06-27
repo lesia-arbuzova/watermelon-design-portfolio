@@ -1,4 +1,4 @@
-# RTK — Rust Token Killer (Codex CLI / Hermes)
+# RTK - Rust Token Killer (Codex CLI / Hermes)
 
 ## Rule
 Use native RTK wrappers for supported output-heavy commands; use `rtk pipe` filters for unsupported noisy commands.
@@ -10,7 +10,7 @@ rtk find .           rtk npm run build    rtk npm test
 rtk tsc --noEmit     rtk pytest -q        rtk docker ps
 ```
 
-RTK 0.42.x часто дає `rtk fallback` для PowerShell/Python/Node. Не форсуй `rtk powershell`, `rtk python`, `rtk node` для цих команд; якщо output треба показати агенту, стискай його pipe-фільтром. Inline `python -c` / `node -e` краще не використовувати — hooks блокують їх, щоб не було raw bypass.
+RTK 0.42.x часто дає `rtk fallback` для PowerShell/Python/Node. Не форсуй `rtk powershell`, `rtk python`, `rtk node` для цих команд; якщо output треба показати агенту, стискай його pipe-фільтром. Inline `python -c` / `node -e` краще не використовувати - hooks блокують їх, щоб не було raw bypass.
 
 ```bash
 set -o pipefail; rg --files -g "*.png" 2>&1 | rtk pipe -f find

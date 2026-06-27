@@ -20,4 +20,4 @@ Open `index.html` locally or publish the repository with any static hosting prov
 
 Standalone case studies live in `projects/<project-slug>/`. Each project keeps its own `index.html` and `assets/` folder so styles and media remain isolated and portable.
 
-- `projects/bestmarket/` — Best Market euroflyer case study
+- `projects/bestmarket/` - Best Market euroflyer case study

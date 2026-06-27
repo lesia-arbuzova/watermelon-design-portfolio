@@ -13,7 +13,7 @@ const translations = {
     "profile.detail": "У роботі ціную логіку, сильну типографіку, чисту ієрархію та послідовність. Добре почуваюся і в преміальній beauty-естетиці, і в інформаційно насичених комерційних макетах.",
     "profile.skill1": "Логотипи та візуальні системи", "profile.skill2": "Social media та рекламні серії", "profile.skill3": "Етикетки, паковання та print", "profile.skill4": "Презентації та product imagery",
     "work.kicker": "Вибрані роботи", "work.title": "Еволюція поточного стилю<br><em>без втрати характеру.</em>",
-    "work.intro": "У добірці — п’ять реальних кейсів із production-версії портфоліо: beauty-айдентика, hair-система, нерухомість, educational campaign і retail-флаєр. Далі — логотипи та прикладні макети.",
+    "work.intro": "У добірці - п’ять реальних кейсів із production-версії портфоліо: beauty-айдентика, hair-система, нерухомість, educational campaign і retail-флаєр. Далі - логотипи та прикладні макети.",
     "projectIndex.kicker": "Індекс кейсів", "projectIndex.beauty": "premium identity / beauty", "projectIndex.karielle": "visual system / hair", "projectIndex.gravity": "social media / нерухомість", "projectIndex.school": "campaign sequence / education", "projectIndex.bestmarket": "retail euroflyer / case study",
     "labels.task": "Задача", "labels.solution": "Рішення", "labels.formats": "Формати",
     "beauty.type": "Айдентика · Beauty", "beauty.summary": "Преміальна айдентика nail/beauty бренду, що однаково впевнено працює у просторі, соцмережах і на невеликих носіях.", "beauty.task": "Створити цілісний преміальний образ без декоративного перевантаження.", "beauty.solution": "Монограмна система, оливково-нейтральна палітра, спокійна serif-типографіка та послідовна адаптація.", "beauty.formats": "Логотип, бейдж, social media, gift certificate, signage та бренд-носії.",
@@ -85,7 +85,7 @@ function applyLanguage(language) {
     if (value) element.setAttribute("aria-label", value);
   });
   languageButtons.forEach((button) => button.setAttribute("aria-pressed", String(button.dataset.language === lang)));
-  const localizedTitle = lang === "uk" ? "Lesia Arbuzova — графічна дизайнерка" : "Lesia Arbuzova — Graphic Designer";
+  const localizedTitle = lang === "uk" ? "Lesia Arbuzova - графічна дизайнерка" : "Lesia Arbuzova - Graphic Designer";
   const localizedDescription = lang === "uk"
     ? "Портфоліо графічної дизайнерки Лесі Арбузової: айдентика, social media, паковання та друкований дизайн."
     : "Graphic design portfolio by Lesia Arbuzova: identity, social media, packaging and print design.";
