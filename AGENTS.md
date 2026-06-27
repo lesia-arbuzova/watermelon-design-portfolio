@@ -14,6 +14,6 @@ rtk find .           rtk npm run build    rtk npm test
 rtk tsc --noEmit     rtk pytest -q        rtk docker ps
 ```
 
-PowerShell/Python/Node у RTK 0.42.x часто дають `rtk fallback`; якщо output треба показати агенту, стискай через `rtk pipe -f log|find|grep`, див. `RTK.md`.
+PowerShell/Python/Node у RTK 0.42.x часто дають `rtk fallback`; якщо output треба показати агенту, стискай через `rtk pipe -f log|find|grep`, див. `RTK.md`. Inline `python -c` / `node -e` та PowerShell `Get-Content`/`Get-ChildItem`/`Select-String` hooks блокують, щоб вони не проходили raw повз RTK.
 
 Railway filters installed in `.rtk/filters.toml` for future RTK builds; current RTK does not expose custom filters via `rtk pipe -f`, so use `rtk summary railway ...` forms from `RTK.md` for Railway commands.
