@@ -59,7 +59,7 @@ em { font-family: var(--serif); font-weight: 400; }
 .hero-facts { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 14px; max-width: 690px; margin: 58px 0 0; }
 .hero-facts div { display: grid; align-content: space-between; gap: 22px; min-height: 112px; padding: 20px 22px; background: #ffffff08; border: 1px solid #ffffff24; }
 .hero-facts dt { color: var(--coral); font-size: 10px; font-weight: 800; text-transform: uppercase; letter-spacing: .12em; }
-.hero-facts dd { margin: 0; color: #f0f1ec; font-size: 15px; font-weight: 600; line-height: 1.35; }
+.hero-facts dd { margin: 0; color: #f0f1ec; font-size: 13px; font-weight: 850; line-height: 1.35; text-transform: uppercase; letter-spacing: .045em; }
 .hero-visual { position: relative; display: grid; align-content: center; gap: 22px; padding: clamp(40px, 6vw, 90px); background: var(--flesh); }
 .hero-visual::before { content: ""; position: absolute; inset: 12% auto auto -9%; width: min(310px, 32vw); aspect-ratio: 1; background: var(--lime); border-radius: 50%; }
 .portrait-frame { position: relative; z-index: 1; width: min(100%, 480px); margin: auto; border: 12px solid var(--ink); background: var(--green); box-shadow: 24px 24px 0 var(--lime); }
@@ -67,8 +67,6 @@ em { font-family: var(--serif); font-weight: 400; }
 .portrait-index, .portrait-caption { position: absolute; color: var(--paper); background: var(--ink); font-size: 9px; font-weight: 800; text-transform: uppercase; letter-spacing: .1em; }
 .portrait-index { top: 14px; left: 14px; padding: 8px 10px; }
 .portrait-caption { right: 0; bottom: 0; padding: 10px 12px; }
-.hero-note { position: relative; z-index: 1; width: min(100%, 480px); margin: 2px auto 0; padding: 14px 18px; color: #f2f4ec; background: var(--ink); border-left: 8px solid var(--lime); font-size: 12px; font-weight: 750; line-height: 1.45; text-transform: uppercase; letter-spacing: .045em; }
-
 .ticker { overflow: hidden; color: var(--ink); background: var(--lime); border-block: 1px solid var(--ink); }
 .ticker-track { display: flex; width: max-content; animation: ticker 26s linear infinite; }
 .ticker span { display: flex; align-items: center; gap: 28px; padding: 18px 28px; font-size: 12px; font-weight: 800; text-transform: uppercase; letter-spacing: .1em; }
