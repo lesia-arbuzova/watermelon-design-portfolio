@@ -171,8 +171,8 @@ em { font-family: var(--serif); font-weight: 400; }
 .applied-card .case-media { background: #d9dad3; }
 .applied-card img { aspect-ratio: 1.15; object-fit: cover; }
 .applied-card:first-child img { object-position: center; }
-.applied-card:nth-child(2) .case-media { background: #050908; }
-.applied-card:nth-child(2) img { object-fit: contain; object-position: center; padding: clamp(18px, 1.5vw, 26px) clamp(24px, 2.1vw, 36px); background: #050908; }
+.applied-card--honey .case-media { background: #050908; }
+.applied-card--honey img { object-fit: contain; object-position: center; padding: clamp(18px, 1.5vw, 26px) clamp(24px, 2.1vw, 36px); background: #050908; }
 .applied-card:nth-child(3) img { object-position: center; }
 .applied-card > div { padding: 24px; }
 .applied-card h3 { margin: 10px 0 0; font-size: 18px; font-weight: 500; }
